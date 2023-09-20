@@ -1,0 +1,160 @@
+header{
+    height: 10vh;
+    line-height: 10vh;
+    font-weight: 500;
+    letter-spacing: 10px;
+}
+header .logo img {
+    width: 230px;
+    height: 80px;
+    padding: 5px 30px 17px 20px;
+
+}
+header .container {
+    padding-top: 15px;
+
+}
+header ul li{
+    margin-left: 30px;
+}
+header ul li a{
+    transition: 0.5s;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+header ul li a:hover {
+    color:blueviolet;
+} 
+.header .navlink{
+    margin-right: 12px;
+
+}
+.home-btn {
+    padding: 18px 25px;
+    position:relative;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    transition: 0.5s all ease;
+    cursor: pointer; 
+    height: fit-content;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.home-btn {
+    background: linear-gradient(292deg, lightsalmon, red);
+    box-shadow: 2px 3px 1px white, 11px 11px 3px black;
+}
+.home-btn:hover{
+    background-color: red; 
+    color: yellow;
+    transform: translateY(-5px);
+}
+.open {
+    display: none;
+}
+/* poping header 1 */
+
+.header {
+    height: 13vh;
+    position: fixed;
+    top: 0vh;
+    z-index: 1000;
+    width: 100%;
+    /* background-color: lightcoral; */
+    box-shadow: 1px 44px 10px -41px black;
+    transition: 0.5s;
+}
+
+/* poping header 2 */
+
+.header.active {
+    height: 12vh;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: lightsalmon;
+    box-shadow: -1px 44px 44px -16px black;
+    transition: 0.5s;
+}
+
+
+@media (max-width: 768px) {
+
+ header .logo {
+    width: 230px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+    header ul {
+        padding: 30px;
+    }
+    header .logo img {
+        width: 200px;
+        height: 50px;
+        padding: 5px 5px 2px 30px;
+    
+    }
+    .nav-links-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        box-shadow: black 0 20px 100px -60px, black 0 30px 60px -30px;
+        left: 0;
+        top: 0;
+        transition: all 0.5s ease-in-out;
+        width: 60%;
+        height: 100vh;
+        background-color: lightpink;    
+        z-index: 888;
+    
+    }
+    header ul li {
+        width: 100%;
+        transition: 0.5s;
+        text-transform: uppercase;
+        line-height: 70px;
+    }
+    header .link {
+        display: none;
+    }
+    .close,.open {
+
+        top: 35px;
+        right: 20px;
+        z-index: 999;
+        color: black;
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        margin-right: 30px;
+        
+    }
+    .close {
+        right: 45%;
+    }
+
+    .close.home-btn {
+        color: white;
+        border-radius: 50%;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    
+    }
+    .header.active {
+        height: 10vh;
+    }
+
+}
+
+.demo {
+    height: 20vh;
+        
+}
+
+
+
+
