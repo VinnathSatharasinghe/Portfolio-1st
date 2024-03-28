@@ -2,17 +2,17 @@ import React, { useState } from 'react'
 import './Header.css'
 import logo from '../pic/logo2.png'
 
-import protfolio from '../portfolio/protfolio'
+// import protfolio from '../portfolio/protfolio'
 
 
 
 const Header = () => {
   //scroll header at top
 
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header")
-    header.classList.toggle("active", window.scrollY > 100)
-  })
+  // window.addEventListener("scroll", function () {
+  //   const header = document.querySelector(".header")
+  //   header.classList.toggle("active", window.scrollY > 100)
+  // })
 
 //toggle menu
 const [Mobile, setMobile] = useState(false)

@@ -68,7 +68,7 @@ header ul li a:hover {
 
 /* poping header 2 */
 
-.header.active {
+/* .header.active {
     height: 12vh;
     position: fixed;
     z-index: 999;
@@ -76,7 +76,7 @@ header ul li a:hover {
     background-color: lightsalmon;
     box-shadow: -1px 44px 44px -16px black;
     transition: 0.5s;
-}
+} */
 
 
 @media (max-width: 768px) {
